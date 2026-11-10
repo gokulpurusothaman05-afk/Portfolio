@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stackly</title>
+  <meta name="description" content="Explore my curated portfolio of digital products, branding systems, and web applications built with precision." />
+    <link rel="stylesheet" href="css/style.css" />
+  <!-- Dedicated Separate Media Query CSS for Each Screen Breakpoint -->
+  <link rel="stylesheet" href="css/screens/screen-320px.css" media="screen and (max-width: 320px)" />
+  <link rel="stylesheet" href="css/screens/screen-375px.css" media="screen and (min-width: 321px) and (max-width: 375px)" />
+  <link rel="stylesheet" href="css/screens/screen-480px.css" media="screen and (min-width: 376px) and (max-width: 480px)" />
+  <link rel="stylesheet" href="css/screens/screen-576px.css" media="screen and (min-width: 481px) and (max-width: 576px)" />
+  <link rel="stylesheet" href="css/screens/screen-768px.css" media="screen and (min-width: 577px) and (max-width: 768px)" />
+  <link rel="stylesheet" href="css/screens/screen-1024px.css" media="screen and (min-width: 769px) and (max-width: 1024px)" />
+  <link rel="stylesheet" href="css/screens/screen-1200px.css" media="screen and (min-width: 1025px) and (max-width: 1200px)" />
+  <link rel="stylesheet" href="css/screens/screen-1440px.css" media="screen and (min-width: 1201px) and (max-width: 1440px)" />
+  <link rel="stylesheet" href="css/screens/screen-wide.css" media="screen and (min-width: 1441px)" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <button class="menu-toggle" aria-label="Toggle Navigation Menu">
+        <span class="menu-toggle-line"></span>
+        <span class="menu-toggle-line"></span>
+      </button>
+
+      <a href="index.html" class="header-logo" aria-label="Stackly Personal Portfolio">
+        <img src="images/logo.webp" alt="Stackly Logo" class="header-logo-image" width="38" height="42" />
+        <span class="header-logo-text">stackly<span class="logo-dot">.</span></span>
+      </a>
+
+      <nav class="header-nav" aria-label="Primary Navigation">
+        <a href="work.html" class="header-nav-link active"><span>(01)</span> Work</a>
+        <a href="about.html" class="header-nav-link"><span>(02)</span> About</a>
+        <a href="services.html" class="header-nav-link"><span>(03)</span> Services</a>
+        <a href="blog.html" class="header-nav-link"><span>(04)</span> Blog</a>
+        <a href="contact.html" class="header-nav-link"><span>(05)</span> Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn-flip btn-flip-primary">
+          <span class="btn-flip-text-wrap">
+            <span class="btn-flip-text">Work With Me</span>
+            <span class="btn-flip-text-hover">Work With Me</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Fullscreen Slide-Down Drawer Menu -->
+  <div class="menu-drawer" role="dialog" aria-modal="true" aria-label="Main Navigation">
+    <div class="menu-drawer-top">
+      <div class="menu-drawer-top-status">
+        <span class="pulse-dot"></span> Available for Select Q1/Q2 2026 Projects
+      </div>
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close navigation menu">
+        <span class="drawer-close-text">CLOSE MENU</span>
+        <span class="drawer-close-icon"><svg class="drawer-close-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+      </button>
+    </div>
+
+    <div class="menu-drawer-content">
+      <nav class="menu-drawer-nav">
+        <a href="work.html" class="menu-drawer-item">
+          <span class="num">(01)</span>
+          <span class="item-text">Work</span>
+          <span class="item-tag">Portfolio &amp; Case Studies</span>
+        </a>
+        <a href="about.html" class="menu-drawer-item">
+          <span class="num">(02)</span>
+          <span class="item-text">About</span>
+          <span class="item-tag">Story &amp; Philosophy</span>
+        </a>
+        <a href="services.html" class="menu-drawer-item">
+          <span class="num">(03)</span>
+          <span class="item-text">Services</span>
+          <span class="item-tag">Capabilities &amp; Pricing</span>
+        </a>
+        <a href="blog.html" class="menu-drawer-item">
+          <span class="num">(04)</span>
+          <span class="item-text">Blog</span>
+          <span class="item-tag">Articles &amp; Journal</span>
+        </a>
+        <a href="contact.html" class="menu-drawer-item">
+          <span class="num">(05)</span>
+          <span class="item-text">Contact</span>
+          <span class="item-tag">Start a Collaboration</span>
+        </a>
+      </nav>
+
+      <div class="menu-drawer-aside">
+        <div class="menu-drawer-aside-block">
+          <div class="drawer-aside-label">Direct Inquiry</div>
+          <a href="mailto:hello@stackly.in" class="drawer-aside-email">hello@stackly.in</a>
+          <div class="drawer-aside-sub">Replies typically within 24 hours</div>
+        </div>
+
+        <div class="menu-drawer-aside-block">
+          <div class="drawer-aside-label">Studio Locations</div>
+          <div class="drawer-aside-val">Bengaluru &bull; Indiranagar &bull; Karnataka</div>
+          <div class="drawer-aside-val">Mumbai &bull; Bandra West &bull; Maharashtra</div>
+        </div>
+
+        <div class="menu-drawer-aside-block">
+          <div class="drawer-aside-label">Social Ecosystem</div>
+          <div class="drawer-social-pills">
+            <a href="404.html" class="drawer-social-pill">X / Twitter</a>
+            <a href="404.html" class="drawer-social-pill">LinkedIn</a>
+            <a href="404.html" class="drawer-social-pill">GitHub</a>
+            <a href="404.html" class="drawer-social-pill">Instagram</a>
+            <a href="404.html" class="drawer-social-pill">Dribbble</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-drawer-footer">
+      <div class="drawer-footer-left">
+        <strong>Stackly</strong> &bull; Independent Digital Designer &amp; Creative Developer &bull; Bengaluru &amp; Mumbai, India
+      </div>
+      <div class="drawer-footer-right">
+        <span>IST (GMT+5:30) &bull; © 2026 Stackly</span>
+      </div>
+    </div>
+  </div>
+
+  <main style="padding-top: 8rem;">
+    <!-- SECTION 1: HERO & CATEGORY FILTERS -->
+    <section class="container-wide" style="margin-bottom: 4rem;">
+      <div class="meta-label" style="margin-bottom: 1rem;">( Selected Projects &bull; 2024–2026 )</div>
+      <h1 class="hero-title-giant" style="font-size: clamp(3rem, 8vw, 8.5rem); margin-bottom: 2rem;">
+        SELECTED<br />
+        <span class="serif-italic">Work</span>
+      </h1>
+
+      <div class="budget-options" style="margin-bottom: 4rem;">
+        <button class="filter-pill budget-pill selected" data-filter="all">All Projects (04)</button>
+        <button class="filter-pill budget-pill" data-filter="web">Web Design</button>
+        <button class="filter-pill budget-pill" data-filter="branding">Branding</button>
+        <button class="filter-pill budget-pill" data-filter="design">Digital Design</button>
+      </div>
+
+      <!-- INTERACTIVE PROJECT LIST WITH SIGNATURE HOVER RIBBONS -->
+      <div class="project-list">
+        <a href="404.html" class="project-row" data-category="web">
+          <div class="project-row-content">
+            <span class="project-index">(01)</span>
+            <h3 class="project-name">Pixel <em>Perfect</em></h3>
+            <span class="project-tags">Web &bull; Fintech Experience &bull; UPI 2.0</span>
+            <span class="project-year">2026</span>
+            <div class="project-arrow">&rarr;</div>
+          </div>
+          <div class="project-hover-ribbon" aria-hidden="true">
+            <div class="project-hover-track">
+              <img src="images/project-01-preview-01.webp" alt="Pixel Perfect" class="project-hover-thumb" />
+              <img src="images/project-01-preview-02.webp" alt="Pixel Perfect" class="project-hover-thumb" />
+              <img src="images/project-01-preview-01.webp" alt="Pixel Perfect" class="project-hover-thumb" />
+              <img src="images/project-01-preview-02.webp" alt="Pixel Perfect" class="project-hover-thumb" />
+            </div>
+          </div>
+        </a>
+
+        <a href="404.html" class="project-row" data-category="branding">
+          <div class="project-row-content">
+            <span class="project-index">(02)</span>
+            <h3 class="project-name">Brand <em>Fusion</em></h3>
+            <span class="project-tags">Branding &bull; Visual Identity System</span>
+            <span class="project-year">2026</span>
+            <div class="project-arrow">&rarr;</div>
+          </div>
+          <div class="project-hover-ribbon" aria-hidden="true">
+            <div class="project-hover-track">
+              <img src="images/project-02-preview-01.webp" alt="Brand Fusion" class="project-hover-thumb" />
+              <img src="images/project-02-preview-02.webp" alt="Brand Fusion" class="project-hover-thumb" />
+              <img src="images/project-02-preview-01.webp" alt="Brand Fusion" class="project-hover-thumb" />
+              <img src="images/project-02-preview-02.webp" alt="Brand Fusion" class="project-hover-thumb" />
+            </div>
+          </div>
+        </a>
+
+        <a href="404.html" class="project-row" data-category="web">
+          <div class="project-row-content">
+            <span class="project-index">(03)</span>
+            <h3 class="project-name">Web <em>Vision</em></h3>
+            <span class="project-tags">Web &bull; Enterprise SaaS Interface</span>
+            <span class="project-year">2025</span>
+            <div class="project-arrow">&rarr;</div>
+          </div>
+          <div class="project-hover-ribbon" aria-hidden="true">
+            <div class="project-hover-track">
+              <img src="images/project-03-preview-01.webp" alt="Web Vision" class="project-hover-thumb" />
+              <img src="images/project-03-preview-02.webp" alt="Web Vision" class="project-hover-thumb" />
+              <img src="images/project-03-preview-01.webp" alt="Web Vision" class="project-hover-thumb" />
+              <img src="images/project-03-preview-02.webp" alt="Web Vision" class="project-hover-thumb" />
+            </div>
+          </div>
+        </a>
+
+        <a href="404.html" class="project-row" data-category="design">
+          <div class="project-row-content">
+            <span class="project-index">(04)</span>
+            <h3 class="project-name">Infinite <em>Design</em></h3>
+            <span class="project-tags">Design &bull; 3D Motion Portfolio</span>
+            <span class="project-year">2025</span>
+            <div class="project-arrow">&rarr;</div>
+          </div>
+          <div class="project-hover-ribbon" aria-hidden="true">
+            <div class="project-hover-track">
+              <img src="images/project-04-preview-01.webp" alt="Infinite Design" class="project-hover-thumb" />
+              <img src="images/project-04-preview-02.webp" alt="Infinite Design" class="project-hover-thumb" />
+              <img src="images/project-04-preview-01.webp" alt="Infinite Design" class="project-hover-thumb" />
+              <img src="images/project-04-preview-02.webp" alt="Infinite Design" class="project-hover-thumb" />
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- EXTRA SECTION 1: CASE STUDY SPOTLIGHT -->
+    <section class="container-wide" style="margin-bottom: 6rem; padding-top: 3rem; border-top: 1px solid var(--border-light);">
+      <div class="section-header">
+        <div>
+          <div class="meta-label" style="margin-bottom: 0.5rem;">( Featured Deep Dive )</div>
+          <h2 class="section-title">PROJECT <em>Spotlight</em></h2>
+        </div>
+        <span class="meta-pill"><span class="dot"></span> Case Study 01</span>
+      </div>
+
+      <div class="work-spotlight-card">
+        <div style="height: 100%; min-height: 440px; overflow: hidden;">
+          <img src="images/home-hero-06.webp" alt="Spotlight Preview" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        <div style="padding: 3.5rem 3.5rem 3.5rem 0;">
+          <div class="meta-label" style="color: var(--accent-primary); margin-bottom: 0.75rem;">Fintech &bull; Mobile Platform</div>
+          <h3 style="font-size: 2.2rem; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 1.25rem; line-height: 1.2;">
+            Architecting UPI 2.0 Checkout for 14 Million Daily Users
+          </h3>
+          <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem;">
+            A complete ground-up redesign of mobile payments for one of India's premier fintech startups. Through simplified authentication steps, intuitive micro-animations, and optimized frontend architecture, we cut drop-offs by 38% and reduced latency to under 400ms.
+          </p>
+          <div class="work-spotlight-metrics">
+            <div>
+              <div style="font-size: 1.85rem; font-weight: 600; color: var(--accent-primary);">+38%</div>
+              <div style="font-size: 0.85rem; color: var(--text-dim); margin-top: 0.25rem;">Conversion Lift</div>
+            </div>
+            <div>
+              <div style="font-size: 1.85rem; font-weight: 600; color: var(--accent-primary);">0.4s</div>
+              <div style="font-size: 0.85rem; color: var(--text-dim); margin-top: 0.25rem;">Checkout Speed</div>
+            </div>
+            <div>
+              <div style="font-size: 1.85rem; font-weight: 600; color: var(--accent-primary);">4.9 <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--accent-primary)" style="display: inline-block; vertical-align: -2px; margin-left: 2px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+              <div style="font-size: 0.85rem; color: var(--text-dim); margin-top: 0.25rem;">App Store Rating</div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn-flip btn-flip-primary">
+            <span class="btn-flip-text-wrap">
+              <span class="btn-flip-text">Request Full Case Study</span>
+              <span class="btn-flip-text-hover">Request Full Case Study</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXTRA SECTION 2: VISUAL ARCHIVE & EXPLORATIONS (4-CARD GRID) -->
+    <section class="container-wide" style="margin-bottom: 6rem;">
+      <div class="section-header">
+        <div>
+          <div class="meta-label" style="margin-bottom: 0.5rem;">( Visual Experiments )</div>
+          <h2 class="section-title">THE DESIGN <em>Archive</em></h2>
+        </div>
+        <div style="color: var(--text-muted); font-size: 0.95rem;">Unpublished concepts, motion tests &amp; micro-interactions</div>
+      </div>
+
+      <div class="work-archive-grid">
+        <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius-md); overflow: hidden; transition: transform var(--transition-normal);">
+          <div style="height: 240px; overflow: hidden;">
+            <img src="images/services-01.webp" alt="Visual Concept 1" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>
+          <div style="padding: 1.5rem;">
+            <div class="meta-label" style="font-size: 0.75rem; margin-bottom: 0.35rem;">Fintech UI</div>
+            <h4 style="font-size: 1.15rem; font-weight: 500; margin-bottom: 0.25rem;">Neomorphic Payment Cards</h4>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Tactile credit card interaction exploring fluid WebGL shaders.</p>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius-md); overflow: hidden; transition: transform var(--transition-normal);">
+          <div style="height: 240px; overflow: hidden;">
+            <img src="images/services-02.webp" alt="Visual Concept 2" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>
+          <div style="padding: 1.5rem;">
+            <div class="meta-label" style="font-size: 0.75rem; margin-bottom: 0.35rem;">Typography</div>
+            <h4 style="font-size: 1.15rem; font-weight: 500; margin-bottom: 0.25rem;">Editorial Poster Series</h4>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">High-contrast serif layout exploring grid systems and negative space.</p>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius-md); overflow: hidden; transition: transform var(--transition-normal);">
+          <div style="height: 240px; overflow: hidden;">
+            <img src="images/services-03.webp" alt="Visual Concept 3" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>
+          <div style="padding: 1.5rem;">
+            <div class="meta-label" style="font-size: 0.75rem; margin-bottom: 0.35rem;">SaaS Dashboard</div>
+            <h4 style="font-size: 1.15rem; font-weight: 500; margin-bottom: 0.25rem;">Real-time Telemetry UI</h4>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">High-density analytics interface designed for rapid situational awareness.</p>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius-md); overflow: hidden; transition: transform var(--transition-normal);">
+          <div style="height: 240px; overflow: hidden;">
+            <img src="images/cta.webp" alt="Visual Concept 4" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>
+          <div style="padding: 1.5rem;">
+            <div class="meta-label" style="font-size: 0.75rem; margin-bottom: 0.35rem;">Motion Design</div>
+            <h4 style="font-size: 1.15rem; font-weight: 500; margin-bottom: 0.25rem;">3D Spatial Canvas</h4>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Interactive scroll-driven animation prototype rendered at 60fps.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXTRA SECTION 3: CLIENT ENDORSEMENTS -->
+    <section class="container-wide" style="margin-bottom: 6rem; padding-top: 3rem; border-top: 1px solid var(--border-light);">
+      <div class="section-header">
+        <div>
+          <div class="meta-label" style="margin-bottom: 0.5rem;">( Client Endorsements )</div>
+          <h2 class="section-title">WHAT PARTNERS <em>Say</em></h2>
+        </div>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card-item">
+          <div>
+            <div class="testimonial-stars" aria-label="5 out of 5 stars" style="display: flex; gap: 3px; color: #FBBF24;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+            <p class="testimonial-body">
+              &ldquo;Stackly is that rare creative technologist who understands both high-end luxury aesthetics and production-grade frontend performance. Our conversion shot up 34% within two weeks of launch.&rdquo;
+            </p>
+          </div>
+          <div>
+            <div class="testimonial-author-name">Vikram Malhotra</div>
+            <div class="testimonial-author-role">Co-Founder &bull; Bangalore Tech Labs</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card-item">
+          <div>
+            <div class="testimonial-stars" aria-label="5 out of 5 stars" style="display: flex; gap: 3px; color: #FBBF24;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+            <p class="testimonial-body">
+              &ldquo;Working with Stackly was an absolute breath of fresh air. Fast, thoughtful, and obsessively attentive to typographic details and micro-interactions. Easily the best collaborator we've hired.&rdquo;
+            </p>
+          </div>
+          <div>
+            <div class="testimonial-author-name">Priya Nair</div>
+            <div class="testimonial-author-role">VP Product &bull; Mumbai D2C Collective</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card-item">
+          <div>
+            <div class="testimonial-stars" aria-label="5 out of 5 stars" style="display: flex; gap: 3px; color: #FBBF24;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FBBF24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+            <p class="testimonial-body">
+              &ldquo;The speed and precision of execution blew us away. Stackly transformed our vague ideas into an unforgettable digital brand that our investors praised during our Series A.&rdquo;
+            </p>
+          </div>
+          <div>
+            <div class="testimonial-author-name">David Chen</div>
+            <div class="testimonial-author-role">Design Director &bull; Global Ventures</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CALL TO ACTION BANNER -->
+    <section class="cta-banner">
+      <div class="container">
+        <div class="cta-box">
+          <h2 class="cta-title">HAVE A PROJECT IN MIND?<br />LET'S <em>Talk.</em></h2>
+          <p class="cta-desc">I’m always open to discussing new freelance opportunities and ambitious collaborations.</p>
+          <a href="contact.html" class="btn-flip btn-flip-primary">
+            <span class="btn-flip-text-wrap">
+              <span class="btn-flip-text">Start a Project</span>
+              <span class="btn-flip-text-hover">Start a Project</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container-wide">
+      <div class="footer-marquee-wrap">
+        <img src="images/headline-footer.svg" alt="Stackly Headline" class="footer-marquee-img" loading="lazy" />
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-left">
+          <div>
+            <h3 class="footer-brand-title">© Made by <a href="about.html" style="color: var(--accent-primary);">Stackly</a></h3>
+            <p class="footer-studio-info">
+              Independent Digital Designer &amp; Creative Developer.<br />
+              Crafting bespoke web experiences from Bengaluru &amp; Mumbai, India.
+            </p>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="404.html" class="footer-social-btn" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="404.html" class="footer-social-btn" aria-label="X / Twitter" title="X / Twitter">
+              <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="404.html" class="footer-social-btn" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="404.html" class="footer-social-btn" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="404.html" class="footer-social-btn" aria-label="Dribbble" title="Dribbble">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm10.193 11.237c-.328-.024-2.812-.178-5.549.927-.221-.497-.457-1.003-.706-1.513 3.656-1.543 5.093-3.664 5.215-3.856 1.139 1.272 1.836 2.824 1.836 4.442h-.796zm-2.617-5.597c-.179.255-1.579 2.186-5.048 3.642-1.39-2.529-2.923-4.789-3.324-5.367 1.488-.563 3.111-.877 4.807-.877 1.341 0 2.614.288 3.565.602zm-9.593-3.084c.389.554 1.896 2.767 3.287 5.267-3.923 1.171-7.854 1.156-8.291 1.154 1.054-2.946 3.003-5.32 5.004-6.421zm-6.983 8.444c.483.003 3.968.014 7.747-.985.25.518.487 1.031.708 1.536-3.834 1.353-7.234 4.544-7.469 4.773-.67-1.484-1.036-3.116-1.036-4.824 0-.171.018-.336.05-.5zm2.748 6.786c.277-.282 3.324-3.213 7.027-4.484 1.066 2.735 1.543 5.379 1.666 6.136-1.406.666-2.983 1.042-4.654 1.042-1.539 0-2.996-.328-4.039-.694zm9.897 1.343c-.143-.836-.619-3.298-1.624-5.918 2.508-.996 4.793-.842 5.099-.817-.184 2.805-1.558 5.265-3.475 6.735z"/></svg>
+            </a>
+          </div>
+
+          <div>
+            <a href="work.html" class="btn-flip btn-flip-primary">
+              <span class="btn-flip-text-wrap">
+                <span class="btn-flip-text">Explore All Work</span>
+                <span class="btn-flip-text-hover">Explore All Work</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div>
+            <div class="footer-col-label">(Pages)</div>
+            <div class="footer-links">
+              <a href="index.html" class="footer-link">Home</a>
+              <a href="services.html" class="footer-link">Services</a>
+              <a href="about.html" class="footer-link">About</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="footer-col-label">(CMS)</div>
+            <div class="footer-links">
+              <a href="work.html" class="footer-link">Work</a>
+              <a href="blog.html" class="footer-link">Blog</a>
+              <a href="404.html" class="footer-link">Pricing</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="footer-col-label">(Utility Pages)</div>
+            <div class="footer-links">
+              <a href="404.html" class="footer-link">404 Error Page</a>
+              <a href="404.html" class="footer-link">Password</a>
+              <a href="404.html" class="footer-link">Styleguide</a>
+              <a href="404.html" class="footer-link">Licensing</a>
+              <a href="404.html" class="footer-link">Changelog</a>
+              <a href="thank-you.html" class="footer-link">Confirmation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-newsletter-wrap">
+        <div>
+          <h4 style="font-size: 1.25rem; font-weight: 500; margin-bottom: 0.35rem;">Stay updated with my latest work</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Join 15,000+ designers, founders, and creative directors across India &amp; globally.</p>
+        </div>
+
+        <form class="footer-newsletter-form" action="thank-you.html" method="GET">
+          <input type="email" class="footer-input" required placeholder="Enter your email address" aria-label="Email Address" />
+          <button type="submit" class="btn-flip btn-flip-primary">
+            <span class="btn-flip-text-wrap">
+              <span class="btn-flip-text">Subscribe</span>
+              <span class="btn-flip-text-hover">Subscribe</span>
+            </span>
+          </button>
+        </form>
+      </div>
+
+      <div class="footer-bottom-legal">
+        <div>Based in Bengaluru &amp; Mumbai, India &bull; Available for Select Client Collaborations</div>
+        <div>All Rights Reserved © 2026 Stackly. Handcrafted with Care.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

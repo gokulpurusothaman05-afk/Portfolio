@@ -1,0 +1,82 @@
+/* ==========================================================================
+   STACKLY — ABOUT PAGE RESPONSIVE MEDIA QUERIES (SEPARATELY WRITTEN 320PX TO 4K)
+   Handles: About Hero, Profile Card, Timeline Journey, Values, Culture Gallery
+   ========================================================================== */
+
+/* 1. Ultra Small Mobile (max-width: 320px) */
+@media screen and (max-width: 320px) {
+  main { padding-top: 5.5rem !important; }
+  .hero-title-giant { font-size: 2.75rem; }
+  .about-profile-grid { grid-template-columns: 1fr; gap: 2rem; margin-bottom: 3rem; }
+  .about-profile-grid img { width: 120px; height: 120px; }
+  .timeline-track { padding-left: 1.5rem; gap: 1.75rem; margin-top: 2rem; }
+  .timeline-item::before { left: -1.85rem; width: 9px; height: 9px; }
+  .timeline-title { font-size: 1.15rem; }
+  .about-gallery-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .about-gallery-grid > div { height: 180px !important; }
+}
+
+/* 2. Small Mobile (min-width: 321px) and (max-width: 375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  main { padding-top: 6rem !important; }
+  .hero-title-giant { font-size: 3.2rem; }
+  .about-profile-grid { grid-template-columns: 1fr; gap: 2.5rem; margin-bottom: 3.5rem; }
+  .about-profile-grid img { width: 140px; height: 140px; }
+  .timeline-track { padding-left: 1.75rem; gap: 2rem; }
+  .timeline-item::before { left: -2.1rem; }
+  .about-gallery-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .about-gallery-grid > div { height: 200px !important; }
+}
+
+/* 3. Standard Mobile (min-width: 376px) and (max-width: 480px) */
+@media screen and (min-width: 376px) and (max-width: 480px) {
+  main { padding-top: 6.5rem !important; }
+  .hero-title-giant { font-size: 3.8rem; }
+  .about-profile-grid { grid-template-columns: 1fr; gap: 2.5rem; margin-bottom: 4rem; }
+  .timeline-track { padding-left: 2rem; gap: 2rem; }
+  .timeline-item::before { left: -2.35rem; }
+  .about-gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .about-gallery-grid > div { height: 190px !important; }
+}
+
+/* 4. Large Phones / Phablets (min-width: 481px) and (max-width: 576px) */
+@media screen and (min-width: 481px) and (max-width: 576px) {
+  .hero-title-giant { font-size: 4.5rem; }
+  .about-profile-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .about-gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-gallery-grid > div { height: 210px !important; }
+}
+
+/* 5. Small Tablets & Foldables (min-width: 577px) and (max-width: 768px) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .hero-title-giant { font-size: 5.5rem; }
+  .about-profile-grid { grid-template-columns: 1fr; gap: 3.5rem; }
+  .about-gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-gallery-grid > div { height: 240px !important; }
+}
+
+/* 6. Standard Tablets & iPads (min-width: 769px) and (max-width: 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-title-giant { font-size: 6.8rem; }
+  .about-profile-grid { grid-template-columns: 1fr 1.2fr; gap: 3rem; }
+  .about-gallery-grid { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .about-gallery-grid > div { height: 200px !important; }
+}
+
+/* 7. Laptops & Small Desktops (min-width: 1025px) and (max-width: 1200px) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .hero-title-giant { font-size: 7.5rem; }
+  .about-gallery-grid > div { height: 230px !important; }
+}
+
+/* 8. Standard Desktops (min-width: 1201px) and (max-width: 1440px) */
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+  .hero-title-giant { font-size: 8.5rem; }
+  .about-gallery-grid > div { height: 260px !important; }
+}
+
+/* 9. Extra Large & 4K Displays (min-width: 1441px) */
+@media screen and (min-width: 1441px) {
+  .hero-title-giant { font-size: 9.5rem; }
+  .about-gallery-grid > div { height: 300px !important; }
+}

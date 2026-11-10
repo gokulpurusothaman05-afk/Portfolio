@@ -1,0 +1,91 @@
+/* ==========================================================================
+   BREAKPOINT 7: LAPTOPS & NOTEBOOKS (min-width: 1025px) and (max-width: 1200px)
+   MacBook Air 13, ThinkPad, Dell XPS 13.
+   ========================================================================== */
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  html, body {
+    font-size: 16px;
+  }
+
+  .hero-title-giant {
+    font-size: 7.5rem !important;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .matrix-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .resources-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .home-section-grid {
+    grid-template-columns: 240px 1fr !important;
+    gap: 3.5rem !important;
+  }
+
+  .work-spotlight-card {
+    grid-template-columns: 1.2fr 1fr !important;
+  }
+
+  .work-archive-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .about-profile-grid {
+    grid-template-columns: 1fr 1.3fr !important;
+    gap: 3.5rem !important;
+  }
+
+  .about-gallery-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .services-tools-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .blog-featured-card {
+    grid-template-columns: 1.3fr 1fr !important;
+  }
+
+  .blog-posts-grid,
+  .blog-guides-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .contact-layout-grid {
+    grid-template-columns: 1fr 1.3fr !important;
+    gap: 4rem !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.3fr 2fr !important;
+    gap: 3.5rem !important;
+  }
+
+  /* High contrast Accordion */
+  .accordion-header, .accordion-title, .accordion-icon {
+    color: #FFFFFF !important;
+  }
+  .accordion-header:hover .accordion-title, .accordion-item.active .accordion-title {
+    color: var(--accent-primary) !important;
+  }
+}

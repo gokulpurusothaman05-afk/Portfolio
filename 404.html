@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stackly</title>
+  <meta name="description" content="The page you are looking for does not exist." />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Dedicated Separate Media Query CSS for Each Screen Breakpoint -->
+  <link rel="stylesheet" href="css/screens/screen-320px.css" media="screen and (max-width: 320px)" />
+  <link rel="stylesheet" href="css/screens/screen-375px.css" media="screen and (min-width: 321px) and (max-width: 375px)" />
+  <link rel="stylesheet" href="css/screens/screen-480px.css" media="screen and (min-width: 376px) and (max-width: 480px)" />
+  <link rel="stylesheet" href="css/screens/screen-576px.css" media="screen and (min-width: 481px) and (max-width: 576px)" />
+  <link rel="stylesheet" href="css/screens/screen-768px.css" media="screen and (min-width: 577px) and (max-width: 768px)" />
+  <link rel="stylesheet" href="css/screens/screen-1024px.css" media="screen and (min-width: 769px) and (max-width: 1024px)" />
+  <link rel="stylesheet" href="css/screens/screen-1200px.css" media="screen and (min-width: 1025px) and (max-width: 1200px)" />
+  <link rel="stylesheet" href="css/screens/screen-1440px.css" media="screen and (min-width: 1201px) and (max-width: 1440px)" />
+  <link rel="stylesheet" href="css/screens/screen-wide.css" media="screen and (min-width: 1441px)" />
+</head>
+<body>
+  <!-- Standalone 404 Page (Only 404 section, No Nav, No Footer, No Extra Sections) -->
+  <main class="utility-standalone-page">
+    <div class="utility-standalone-card">
+      <a href="index.html" class="utility-standalone-logo" aria-label="Stackly Home">
+        <img src="images/logo.webp" alt="Stackly Logo" width="38" height="42" />
+        <span class="header-logo-text">stackly<span class="logo-dot">.</span></span>
+      </a>
+
+      <div class="meta-pill" style="margin-bottom: 1.5rem;">
+        <span class="dot" style="background: #EF4444; box-shadow: 0 0 8px #EF4444;"></span> Status 404 &bull; Page Not Found
+      </div>
+
+      <h1 class="hero-title-giant" style="font-size: clamp(3.2rem, 8.5vw, 8.5rem); line-height: 0.95; margin-bottom: 1.75rem;">
+        PAGE NOT<br />
+        <span class="serif-italic">Found</span>
+      </h1>
+
+      <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 540px; margin: 0 auto 2.5rem; line-height: 1.6;">
+        The link you followed may be broken, or the page may have been moved. All unmapped buttons and social icons route here gracefully.
+      </p>
+
+      <div class="utility-standalone-actions">
+        <a href="index.html" class="btn-flip btn-flip-primary">
+          <span class="btn-flip-text-wrap">
+            <span class="btn-flip-text">Back to Home</span>
+            <span class="btn-flip-text-hover">Back to Home</span>
+          </span>
+        </a>
+        <a href="work.html" class="btn-flip btn-flip-outline">
+          <span class="btn-flip-text-wrap">
+            <span class="btn-flip-text">View My Work</span>
+            <span class="btn-flip-text-hover">View My Work</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stackly</title>
+  <meta name="description" content="Learn more about Stackly, an independent digital designer and full-stack creative developer based in Bengaluru &amp; Mumbai, India." />
+    <link rel="stylesheet" href="css/style.css" />
+  <!-- Dedicated Separate Media Query CSS for Each Screen Breakpoint -->
+  <link rel="stylesheet" href="css/screens/screen-320px.css" media="screen and (max-width: 320px)" />
+  <link rel="stylesheet" href="css/screens/screen-375px.css" media="screen and (min-width: 321px) and (max-width: 375px)" />
+  <link rel="stylesheet" href="css/screens/screen-480px.css" media="screen and (min-width: 376px) and (max-width: 480px)" />
+  <link rel="stylesheet" href="css/screens/screen-576px.css" media="screen and (min-width: 481px) and (max-width: 576px)" />
+  <link rel="stylesheet" href="css/screens/screen-768px.css" media="screen and (min-width: 577px) and (max-width: 768px)" />
+  <link rel="stylesheet" href="css/screens/screen-1024px.css" media="screen and (min-width: 769px) and (max-width: 1024px)" />
+  <link rel="stylesheet" href="css/screens/screen-1200px.css" media="screen and (min-width: 1025px) and (max-width: 1200px)" />
+  <link rel="stylesheet" href="css/screens/screen-1440px.css" media="screen and (min-width: 1201px) and (max-width: 1440px)" />
+  <link rel="stylesheet" href="css/screens/screen-wide.css" media="screen and (min-width: 1441px)" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <button class="menu-toggle" aria-label="Toggle Navigation Menu">
+        <span class="menu-toggle-line"></span>
+        <span class="menu-toggle-line"></span>
+      </button>
+
+      <a href="index.html" class="header-logo" aria-label="Stackly Personal Portfolio">
+        <img src="images/logo.webp" alt="Stackly Logo" class="header-logo-image" width="38" height="42" />
+        <span class="header-logo-text">stackly<span class="logo-dot">.</span></span>
+      </a>
+
+      <nav class="header-nav" aria-label="Primary Navigation">
+        <a href="work.html" class="header-nav-link"><span>(01)</span> Work</a>
+        <a href="about.html" class="header-nav-link active"><span>(02)</span> About</a>
+        <a href="services.html" class="header-nav-link"><span>(03)</span> Services</a>
+        <a href="blog.html" class="header-nav-link"><span>(04)</span> Blog</a>
+        <a href="contact.html" class="header-nav-link"><span>(05)</span> Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn-flip btn-flip-primary">
+          <span class="btn-flip-text-wrap">
+            <span class="btn-flip-text">Work With Me</span>
+            <span class="btn-flip-text-hover">Work With Me</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Fullscreen Slide-Down Drawer Menu -->
+  <div class="menu-drawer" role="dialog" aria-modal="true" aria-label="Main Navigation">
+    <div class="menu-drawer-top">
+      <div class="menu-drawer-top-status">
+        <span class="pulse-dot"></span> Available for Select Q1/Q2 2026 Projects
+      </div>
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close navigation menu">
+        <span class="drawer-close-text">CLOSE MENU</span>
+        <span class="drawer-close-icon"><svg class="drawer-close-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+      </button>
+    </div>
+
+    <div class="menu-drawer-content">
+      <nav class="menu-drawer-nav">
+        <a href="work.html" class="menu-drawer-item">
+          <span class="num">(01)</span>
+          <span class="item-text">Work</span>
+          <span class="item-tag">Portfolio &amp; Case Studies</span>
+        </a>
+        <a href="about.html" class="menu-drawer-item">
+          <span class="num">(02)</span>
+          <span class="item-text">About</span>
+          <span class="item-tag">Story &amp; Philosophy</span>
+        </a>
+        <a href="services.html" class="menu-drawer-item">
+          <span class="num">(03)</span>
+          <span class="item-text">Services</span>
+          <span class="item-tag">Capabilities &amp; Pricing</span>
+        </a>
+        <a href="blog.html" class="menu-drawer-item">
+          <span class="num">(04)</span>
+          <span class="item-text">Blog</span>
+          <span class="item-tag">Articles &amp; Journal</span>
+        </a>
+        <a href="contact.html" class="menu-drawer-item">
+          <span class="num">(05)</span>
+          <span class="item-text">Contact</span>
+          <span class="item-tag">Start a Collaboration</span>
+        </a>
+      </nav>
+
+      <div class="menu-drawer-aside">
+        <div class="menu-drawer-aside-block">
+          <div class="drawer-aside-label">Direct Inquiry</div>
+          <a href="mailto:hello@stackly.in" class="drawer-aside-email">hello@stackly.in</a>
+          <div class="drawer-aside-sub">Replies typically within 24 hours</div>
+        </div>
+
+        <div class="menu-drawer-aside-block">
+          <div class="drawer-aside-label">Studio Locations</div>
+          <div class="drawer-aside-val">Bengaluru &bull; Indiranagar &bull; Karnataka</div>
+          <div class="drawer-aside-val">Mumbai &bull; Bandra West &bull; Maharashtra</div>
+        </div>
+
+        <div class="menu-drawer-aside-block">
+          <div class="drawer-aside-label">Social Ecosystem</div>
+          <div class="drawer-social-pills">
+            <a href="404.html" class="drawer-social-pill">X / Twitter</a>
+            <a href="404.html" class="drawer-social-pill">LinkedIn</a>
+            <a href="404.html" class="drawer-social-pill">GitHub</a>
+            <a href="404.html" class="drawer-social-pill">Instagram</a>
+            <a href="404.html" class="drawer-social-pill">Dribbble</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-drawer-footer">
+      <div class="drawer-footer-left">
+        <strong>Stackly</strong> &bull; Independent Digital Designer &amp; Creative Developer &bull; Bengaluru &amp; Mumbai, India
+      </div>
+      <div class="drawer-footer-right">
+        <span>IST (GMT+5:30) &bull; © 2026 Stackly</span>
+      </div>
+    </div>
+  </div>
+
+  <main style="padding-top: 8rem;">
+    <!-- SECTION 1: HERO & PROFILE -->
+    <section class="container-wide" style="margin-bottom: 5rem;">
+      <div class="meta-label" style="margin-bottom: 1rem;">( About Me )</div>
+      <h1 class="hero-title-giant" style="font-size: clamp(3rem, 8vw, 8.5rem); margin-bottom: 3.5rem;">
+        ABOUT<br />
+        <span class="serif-italic">Stackly</span>
+      </h1>
+
+      <div class="about-profile-grid">
+        <!-- Author Profile Card -->
+        <div style="background: var(--bg-card); border: 1px solid var(--border-medium); border-radius: var(--radius-lg); padding: 2.5rem; text-align: center;">
+          <img src="images/author.webp" alt="Stackly — Independent Designer" width="180" height="180" style="border-radius: 50%; margin: 0 auto 1.5rem; border: 3px solid var(--accent-primary); box-shadow: 0 0 30px rgba(0, 245, 160, 0.3);" />
+          <h2 style="font-size: 1.85rem; font-weight: 500; margin-bottom: 0.5rem;">Stackly</h2>
+          <p style="color: var(--accent-primary); font-size: 0.95rem; margin-bottom: 1.5rem;">Digital Designer &bull; Creative Developer</p>
+          <div style="display: flex; gap: 0.75rem; justify-content: center; margin-bottom: 2rem;">
+            <a href="404.html" class="footer-social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            <a href="404.html" class="footer-social-btn" aria-label="X / Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="404.html" class="footer-social-btn" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+          </div>
+          <div style="font-size: 0.9rem; color: var(--text-muted); border-top: 1px solid var(--border-light); padding-top: 1.25rem;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: -2px; margin-right: 4px; color: var(--accent-primary);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Bengaluru &bull; Mumbai, India<br />
+            Available for remote contracts worldwide
+          </div>
+        </div>
+
+        <!-- Personal Story & Philosophy -->
+        <div>
+          <h2 style="font-size: 2.2rem; font-weight: 500; margin-bottom: 1.5rem; letter-spacing: -0.02em;">
+            Designing with Intention. <span style="font-family: var(--font-serif); font-style: italic; color: var(--accent-primary);">Engineering with Precision.</span>
+          </h2>
+          <p style="font-size: 1.15rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem;">
+            I am a multi-disciplinary creator working at the intersection of aesthetic design and production-grade software engineering. Over the past 8+ years, I have helped tech founders, emerging startups, and visionary brands establish iconic digital identities and high-performing websites.
+          </p>
+          <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 2.5rem;">
+            My philosophy centers on simplicity, typographic rigor, and intuitive interaction. I believe that a website should not merely convey information — it should evoke an emotion, build immediate credibility, and function effortlessly across every device.
+          </p>
+
+          <!-- Toolkit & Skills -->
+          <div style="margin-bottom: 3rem;">
+            <div class="meta-label" style="margin-bottom: 1rem;">( My Toolkit &bull; Skills )</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
+              <span class="meta-pill">Figma &bull; UI/UX</span>
+              <span class="meta-pill">Creative Direction</span>
+              <span class="meta-pill">HTML5 &bull; CSS3 &bull; JS</span>
+              <span class="meta-pill">React &bull; Next.js</span>
+              <span class="meta-pill">TypeScript</span>
+              <span class="meta-pill">Interaction Motion</span>
+              <span class="meta-pill">Design Tokens</span>
+              <span class="meta-pill">Responsive Web</span>
+              <span class="meta-pill">Brand Identity</span>
+            </div>
+          </div>
+
+          <a href="contact.html" class="btn-flip btn-flip-primary">
+            <span class="btn-flip-text-wrap">
+              <span class="btn-flip-text">Start a Conversation</span>
+              <span class="btn-flip-text-hover">Start a Conversation</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXTRA SECTION 1: CAREER JOURNEY TIMELINE -->
+    <section class="container-wide" style="margin-bottom: 6rem; padding-top: 3rem; border-top: 1px solid var(--border-light);">
+      <div class="section-header">
+        <div>
+          <div class="meta-label" style="margin-bottom: 0.5rem;">( Career Milestones )</div>
+          <h2 class="section-title">MY <em>Journey</em></h2>
+        </div>
+        <div style="color: var(--text-muted); font-size: 0.95rem;">8+ years of craft &bull; From startups to independent consulting</div>
+      </div>
+
+      <div class="timeline-track">
+        <div class="timeline-item">
+          <div class="timeline-year">2024 &mdash; PRESENT</div>
+          <h3 class="timeline-title">Independent Digital Designer &amp; Creative Developer</h3>
+          <p class="timeline-desc">
+            Partnering directly with seed-to-scale founders, creative studios, and global brands. Delivering end-to-end brand identities, accessible design systems, and custom Next.js web applications.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2021 &mdash; 2024</div>
+          <h3 class="timeline-title">Lead Product Designer &bull; Indian Fintech Unicorn</h3>
+          <p class="timeline-desc">
+            Led the checkout experience and design token architecture for UPI 2.0 mobile payment flows serving 14M+ daily active users across India. Reduced payment drop-offs by 38% and scaled the design system across 4 business units.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2019 &mdash; 2021</div>
+          <h3 class="timeline-title">UI/UX &amp; Creative Technologist &bull; Studio Pulse Mumbai</h3>
+          <p class="timeline-desc">
+            Designed and engineered high-impact marketing websites, 3D interactive microsites, and brand systems for luxury D2C fashion, fintech, and architecture clients.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2017 &mdash; 2019</div>
+          <h3 class="timeline-title">Junior Visual &amp; Interaction Designer &bull; Creative Collective</h3>
+          <p class="timeline-desc">
+            Focused on typography hierarchies, custom icon suites, responsive CSS layouts, and component-driven prototyping in early Figma and Sketch.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXTRA SECTION 2: CORE DESIGN PRINCIPLES -->
+    <section class="container-wide" style="margin-bottom: 6rem; padding-top: 3rem; border-top: 1px solid var(--border-light);">
+      <div class="section-header">
+        <div>
+          <div class="meta-label" style="margin-bottom: 0.5rem;">( Guiding Values )</div>
+          <h2 class="section-title">HOW I <em>Think</em></h2>
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" style="min-height: auto;">
+          <div class="service-num">(01)</div>
+          <h3 class="service-title">Typographic Rigor</h3>
+          <p class="service-desc">
+            Typography is the foundation of digital dignity. I obsess over line lengths, vertical rhythm, and pairing modernist sans with expressive editorial serifs.
+          </p>
+        </div>
+
+        <div class="service-card" style="min-height: auto;">
+          <div class="service-num">(02)</div>
+          <h3 class="service-title">Performance as Aesthetic</h3>
+          <p class="service-desc">
+            A beautiful website that takes 4 seconds to render is flawed. Sub-second load times, silky 60fps animations, and zero framework bloat are non-negotiable.
+          </p>
+        </div>
+
+        <div class="service-card" style="min-height: auto;">
+          <div class="service-num">(03)</div>
+          <h3 class="service-title">Code as Design Material</h3>
+          <p class="service-desc">
+            Designing in Figma without understanding browser layout engines leads to fragile results. I design with DOM realities and CSS layout constraints in mind.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXTRA SECTION 3: BEHIND THE SCENES GALLERY -->
+    <section class="container-wide" style="margin-bottom: 6rem;">
+      <div class="section-header">
+        <div>
+          <div class="meta-label" style="margin-bottom: 0.5rem;">( Studio Life )</div>
+          <h2 class="section-title">BEHIND THE <em>Scenes</em></h2>
+        </div>
+        <div style="color: var(--text-muted); font-size: 0.95rem;">Life in Bengaluru &bull; Design rituals &bull; Prototyping sessions</div>
+      </div>
+
+      <div class="about-gallery-grid">
+        <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-light); height: 260px;">
+          <img src="images/about-01.webp" alt="Workspace Bengaluru" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-light); height: 260px;">
+          <img src="images/about-02.webp" alt="Design Token Workshop" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-light); height: 260px;">
+          <img src="images/about-03.webp" alt="Prototyping Session" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-light); height: 260px;">
+          <img src="images/about-04.webp" alt="Creative Standup" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CALL TO ACTION BANNER -->
+    <section class="cta-banner">
+      <div class="container">
+        <div class="cta-box">
+          <h2 class="cta-title">LET'S CREATE SOMETHING <em>Memorable.</em></h2>
+          <p class="cta-desc">Reach out directly to discuss your project, timeline, and vision.</p>
+          <a href="contact.html" class="btn-flip btn-flip-primary">
+            <span class="btn-flip-text-wrap">
+              <span class="btn-flip-text">Get in Touch</span>
+              <span class="btn-flip-text-hover">Get in Touch</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container-wide">
+      <div class="footer-marquee-wrap">
+        <img src="images/headline-footer.svg" alt="Stackly Headline" class="footer-marquee-img" loading="lazy" />
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-left">
+          <div>
+            <h3 class="footer-brand-title">© Made by <a href="about.html" style="color: var(--accent-primary);">Stackly</a></h3>
+            <p class="footer-studio-info">
+              Independent Digital Designer &amp; Creative Developer.<br />
+              Crafting bespoke web experiences from Bengaluru &amp; Mumbai, India.
+            </p>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="404.html" class="footer-social-btn" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="404.html" class="footer-social-btn" aria-label="X / Twitter" title="X / Twitter">
+              <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="404.html" class="footer-social-btn" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="404.html" class="footer-social-btn" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="404.html" class="footer-social-btn" aria-label="Dribbble" title="Dribbble">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm10.193 11.237c-.328-.024-2.812-.178-5.549.927-.221-.497-.457-1.003-.706-1.513 3.656-1.543 5.093-3.664 5.215-3.856 1.139 1.272 1.836 2.824 1.836 4.442h-.796zm-2.617-5.597c-.179.255-1.579 2.186-5.048 3.642-1.39-2.529-2.923-4.789-3.324-5.367 1.488-.563 3.111-.877 4.807-.877 1.341 0 2.614.288 3.565.602zm-9.593-3.084c.389.554 1.896 2.767 3.287 5.267-3.923 1.171-7.854 1.156-8.291 1.154 1.054-2.946 3.003-5.32 5.004-6.421zm-6.983 8.444c.483.003 3.968.014 7.747-.985.25.518.487 1.031.708 1.536-3.834 1.353-7.234 4.544-7.469 4.773-.67-1.484-1.036-3.116-1.036-4.824 0-.171.018-.336.05-.5zm2.748 6.786c.277-.282 3.324-3.213 7.027-4.484 1.066 2.735 1.543 5.379 1.666 6.136-1.406.666-2.983 1.042-4.654 1.042-1.539 0-2.996-.328-4.039-.694zm9.897 1.343c-.143-.836-.619-3.298-1.624-5.918 2.508-.996 4.793-.842 5.099-.817-.184 2.805-1.558 5.265-3.475 6.735z"/></svg>
+            </a>
+          </div>
+
+          <div>
+            <a href="work.html" class="btn-flip btn-flip-primary">
+              <span class="btn-flip-text-wrap">
+                <span class="btn-flip-text">Explore All Work</span>
+                <span class="btn-flip-text-hover">Explore All Work</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div>
+            <div class="footer-col-label">(Pages)</div>
+            <div class="footer-links">
+              <a href="index.html" class="footer-link">Home</a>
+              <a href="services.html" class="footer-link">Services</a>
+              <a href="about.html" class="footer-link">About</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="footer-col-label">(CMS)</div>
+            <div class="footer-links">
+              <a href="work.html" class="footer-link">Work</a>
+              <a href="blog.html" class="footer-link">Blog</a>
+              <a href="404.html" class="footer-link">Pricing</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="footer-col-label">(Utility Pages)</div>
+            <div class="footer-links">
+              <a href="404.html" class="footer-link">404 Error Page</a>
+              <a href="404.html" class="footer-link">Password</a>
+              <a href="404.html" class="footer-link">Styleguide</a>
+              <a href="404.html" class="footer-link">Licensing</a>
+              <a href="404.html" class="footer-link">Changelog</a>
+              <a href="thank-you.html" class="footer-link">Confirmation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-newsletter-wrap">
+        <div>
+          <h4 style="font-size: 1.25rem; font-weight: 500; margin-bottom: 0.35rem;">Stay updated with my latest work</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Join 15,000+ designers, founders, and creative directors across India &amp; globally.</p>
+        </div>
+
+        <form class="footer-newsletter-form" action="thank-you.html" method="GET">
+          <input type="email" class="footer-input" required placeholder="Enter your email address" aria-label="Email Address" />
+          <button type="submit" class="btn-flip btn-flip-primary">
+            <span class="btn-flip-text-wrap">
+              <span class="btn-flip-text">Subscribe</span>
+              <span class="btn-flip-text-hover">Subscribe</span>
+            </span>
+          </button>
+        </form>
+      </div>
+
+      <div class="footer-bottom-legal">
+        <div>Based in Bengaluru &amp; Mumbai, India &bull; Available for Select Client Collaborations</div>
+        <div>All Rights Reserved © 2026 Stackly. Handcrafted with Care.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

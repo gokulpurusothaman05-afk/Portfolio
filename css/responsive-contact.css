@@ -1,0 +1,76 @@
+/* ==========================================================================
+   STACKLY — CONTACT RESPONSIVE MEDIA QUERIES (SEPARATELY WRITTEN 320PX TO 4K)
+   Handles: Contact Hero, Status Bar, Contact Grid, Form, FAQ, Intro Chat Card
+   ========================================================================== */
+
+/* 1. Ultra Small Mobile (max-width: 320px) */
+@media screen and (max-width: 320px) {
+  main { padding-top: 5.5rem !important; }
+  .hero-title-giant { font-size: 2.75rem; }
+  .status-pill-grid { grid-template-columns: 1fr; gap: 1rem; margin-bottom: 2.5rem; }
+  .status-card { padding: 1.25rem; }
+  .status-icon { width: 36px; height: 36px; font-size: 1rem; }
+  .status-value { font-size: 0.95rem; }
+  .contact-layout-grid { grid-template-columns: 1fr; gap: 2.5rem; margin-bottom: 3.5rem; }
+  .contact-layout-grid > div:last-child { padding: 1.75rem 1.25rem !important; border-radius: var(--radius-md) !important; }
+  .budget-options { gap: 0.4rem; }
+  .budget-pill { padding: 0.5rem 0.85rem; font-size: 0.75rem; }
+  .form-input, .form-textarea { padding: 0.85rem 1rem; font-size: 0.9rem; }
+}
+
+/* 2. Small Mobile (min-width: 321px) and (max-width: 375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  main { padding-top: 6rem !important; }
+  .hero-title-giant { font-size: 3.2rem; }
+  .status-pill-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .contact-layout-grid { grid-template-columns: 1fr; gap: 3rem; margin-bottom: 4rem; }
+  .contact-layout-grid > div:last-child { padding: 2rem 1.5rem !important; }
+  .budget-pill { padding: 0.55rem 1rem; font-size: 0.8rem; }
+}
+
+/* 3. Standard Mobile (min-width: 376px) and (max-width: 480px) */
+@media screen and (min-width: 376px) and (max-width: 480px) {
+  main { padding-top: 6.5rem !important; }
+  .hero-title-giant { font-size: 3.8rem; }
+  .status-pill-grid { grid-template-columns: 1fr; }
+  .contact-layout-grid { grid-template-columns: 1fr; gap: 3.5rem; }
+  .contact-layout-grid > div:last-child { padding: 2.25rem 1.75rem !important; }
+}
+
+/* 4. Large Phones / Phablets (min-width: 481px) and (max-width: 576px) */
+@media screen and (min-width: 481px) and (max-width: 576px) {
+  .hero-title-giant { font-size: 4.5rem; }
+  .status-pill-grid { grid-template-columns: 1fr; }
+  .contact-layout-grid { grid-template-columns: 1fr; gap: 3.5rem; }
+}
+
+/* 5. Small Tablets & Foldables (min-width: 577px) and (max-width: 768px) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .hero-title-giant { font-size: 5.5rem; }
+  .status-pill-grid { grid-template-columns: 1fr; }
+  .contact-layout-grid { grid-template-columns: 1fr; gap: 4rem; }
+}
+
+/* 6. Standard Tablets & iPads (min-width: 769px) and (max-width: 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-title-giant { font-size: 6.8rem; }
+  .status-pill-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .contact-layout-grid { grid-template-columns: 1fr 1.2fr; gap: 3rem; }
+}
+
+/* 7. Laptops & Small Desktops (min-width: 1025px) and (max-width: 1200px) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .hero-title-giant { font-size: 7.5rem; }
+  .status-pill-grid { grid-template-columns: repeat(3, 1fr); }
+  .contact-layout-grid { grid-template-columns: 1fr 1.3fr; gap: 4rem; }
+}
+
+/* 8. Standard Desktops (min-width: 1201px) and (max-width: 1440px) */
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+  .hero-title-giant { font-size: 8.5rem; }
+}
+
+/* 9. Extra Large & 4K Displays (min-width: 1441px) */
+@media screen and (min-width: 1441px) {
+  .hero-title-giant { font-size: 9.5rem; }
+}

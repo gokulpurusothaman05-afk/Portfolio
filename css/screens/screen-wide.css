@@ -1,0 +1,58 @@
+/* ==========================================================================
+   BREAKPOINT 9: ULTRA-WIDE & 4K DISPLAYS (min-width: 1441px)
+   Studio Display, Pro Display XDR, Ultrawide 34"+ monitors.
+   ========================================================================== */
+
+@media screen and (min-width: 1441px) {
+  html, body {
+    font-size: 17px;
+  }
+
+  .container-wide {
+    max-width: 1750px !important;
+  }
+
+  .hero-title-giant {
+    font-size: 10.5rem !important;
+  }
+
+  .hero-media-wrapper img {
+    height: 580px !important;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  .home-section-grid {
+    grid-template-columns: 280px 1fr !important;
+    gap: 5rem !important;
+  }
+
+  .work-spotlight-card {
+    grid-template-columns: 1.3fr 1fr !important;
+    gap: 5rem !important;
+  }
+
+  .contact-layout-grid {
+    grid-template-columns: 1fr 1.4fr !important;
+    gap: 6rem !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.6fr 2fr !important;
+    gap: 5rem !important;
+  }
+
+  /* High contrast Accordion */
+  .accordion-header, .accordion-title, .accordion-icon {
+    color: #FFFFFF !important;
+  }
+  .accordion-header:hover .accordion-title, .accordion-item.active .accordion-title {
+    color: var(--accent-primary) !important;
+  }
+}

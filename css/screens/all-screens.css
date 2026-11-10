@@ -1,0 +1,14 @@
+/* ==========================================================================
+   STACKLY PORTFOLIO &bull; MASTER SCREEN RESPONSIVE AGGREGATOR
+   Imports all 9 individual screen media queries in strict ascending order.
+   ========================================================================== */
+
+@import url('screen-320px.css');
+@import url('screen-375px.css');
+@import url('screen-480px.css');
+@import url('screen-576px.css');
+@import url('screen-768px.css');
+@import url('screen-1024px.css');
+@import url('screen-1200px.css');
+@import url('screen-1440px.css');
+@import url('screen-wide.css');

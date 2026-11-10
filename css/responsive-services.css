@@ -1,0 +1,90 @@
+/* ==========================================================================
+   STACKLY — SERVICES RESPONSIVE MEDIA QUERIES (SEPARATELY WRITTEN 320PX TO 4K)
+   Handles: Services Hero, Deliverables Matrix, Pricing Cards, Tooling, FAQ
+   ========================================================================== */
+
+/* 1. Ultra Small Mobile (max-width: 320px) */
+@media screen and (max-width: 320px) {
+  main { padding-top: 5.5rem !important; }
+  .hero-title-giant { font-size: 2.75rem; }
+  .services-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .service-card { padding: 1.5rem; }
+  .matrix-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .matrix-card { padding: 1.5rem; }
+  .matrix-card-title { font-size: 1.2rem; }
+  .pricing-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .pricing-card { padding: 2rem 1.5rem; }
+  .pricing-price { font-size: 2rem; }
+  .services-tools-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .services-tools-grid > div { padding: 1.5rem !important; }
+  .accordion-title { font-size: 1.15rem; }
+}
+
+/* 2. Small Mobile (min-width: 321px) and (max-width: 375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  main { padding-top: 6rem !important; }
+  .hero-title-giant { font-size: 3.2rem; }
+  .services-grid { grid-template-columns: 1fr; }
+  .matrix-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .matrix-card { padding: 1.75rem; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .pricing-card { padding: 2.25rem 1.75rem; }
+  .services-tools-grid { grid-template-columns: 1fr; }
+}
+
+/* 3. Standard Mobile (min-width: 376px) and (max-width: 480px) */
+@media screen and (min-width: 376px) and (max-width: 480px) {
+  main { padding-top: 6.5rem !important; }
+  .hero-title-giant { font-size: 3.8rem; }
+  .services-grid { grid-template-columns: 1fr; }
+  .matrix-grid { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .services-tools-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+}
+
+/* 4. Large Phones / Phablets (min-width: 481px) and (max-width: 576px) */
+@media screen and (min-width: 481px) and (max-width: 576px) {
+  .hero-title-giant { font-size: 4.5rem; }
+  .services-grid { grid-template-columns: 1fr; }
+  .matrix-grid { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .services-tools-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* 5. Small Tablets & Foldables (min-width: 577px) and (max-width: 768px) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .hero-title-giant { font-size: 5.5rem; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .matrix-grid { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .services-tools-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* 6. Standard Tablets & iPads (min-width: 769px) and (max-width: 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-title-giant { font-size: 6.8rem; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .matrix-grid { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .pricing-grid { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .pricing-card { padding: 2rem 1.5rem; }
+  .services-tools-grid { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+}
+
+/* 7. Laptops & Small Desktops (min-width: 1025px) and (max-width: 1200px) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .hero-title-giant { font-size: 7.5rem; }
+  .services-grid { grid-template-columns: repeat(3, 1fr); }
+  .matrix-grid { grid-template-columns: repeat(3, 1fr); }
+  .pricing-grid { grid-template-columns: repeat(3, 1fr); }
+  .services-tools-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* 8. Standard Desktops (min-width: 1201px) and (max-width: 1440px) */
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+  .hero-title-giant { font-size: 8.5rem; }
+}
+
+/* 9. Extra Large & 4K Displays (min-width: 1441px) */
+@media screen and (min-width: 1441px) {
+  .hero-title-giant { font-size: 9.5rem; }
+}

@@ -1,0 +1,99 @@
+/* ==========================================================================
+   STACKLY — WORK PAGE RESPONSIVE MEDIA QUERIES (SEPARATELY WRITTEN 320PX TO 4K)
+   Handles: Work Hero, Filter Pills, Spotlight Case Study, Visual Archive, Endorsements
+   ========================================================================== */
+
+/* 1. Ultra Small Mobile (max-width: 320px) */
+@media screen and (max-width: 320px) {
+  main { padding-top: 5.5rem !important; }
+  .hero-title-giant { font-size: 2.75rem; }
+  .budget-options { gap: 0.4rem; }
+  .budget-pill { padding: 0.5rem 0.85rem; font-size: 0.75rem; }
+  .project-row { padding: 1.25rem 0.5rem; }
+  .project-row-content { grid-template-columns: 1fr; gap: 0.5rem; }
+  .project-index, .project-year, .project-arrow { display: none; }
+  .project-name { font-size: 1.4rem; }
+  .work-spotlight-card { grid-template-columns: 1fr; gap: 1.5rem; }
+  .work-spotlight-img-wrap { min-height: 220px; }
+  .work-spotlight-content { padding: 1.5rem; }
+  .work-spotlight-content h3 { font-size: 1.4rem !important; }
+  .work-spotlight-metrics { grid-template-columns: 1fr; gap: 1rem; }
+  .work-archive-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .testimonials-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .testimonial-card-item { padding: 1.5rem; }
+}
+
+/* 2. Small Mobile (min-width: 321px) and (max-width: 375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  main { padding-top: 6rem !important; }
+  .hero-title-giant { font-size: 3.2rem; }
+  .budget-pill { padding: 0.55rem 1rem; font-size: 0.8rem; }
+  .project-row-content { grid-template-columns: 35px 1fr auto; gap: 0.75rem; }
+  .project-year { display: none; }
+  .work-spotlight-card { grid-template-columns: 1fr; gap: 1.75rem; }
+  .work-spotlight-img-wrap { min-height: 240px; }
+  .work-spotlight-content { padding: 1.75rem; }
+  .work-spotlight-content h3 { font-size: 1.6rem !important; }
+  .work-spotlight-metrics { grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+  .work-archive-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+}
+
+/* 3. Standard Mobile (min-width: 376px) and (max-width: 480px) */
+@media screen and (min-width: 376px) and (max-width: 480px) {
+  main { padding-top: 6.5rem !important; }
+  .hero-title-giant { font-size: 3.8rem; }
+  .project-row-content { grid-template-columns: 40px 1fr auto; gap: 1rem; }
+  .project-year { display: none; }
+  .work-spotlight-card { grid-template-columns: 1fr; gap: 2rem; }
+  .work-spotlight-img-wrap { min-height: 260px; }
+  .work-spotlight-content { padding: 2rem; }
+  .work-archive-grid { grid-template-columns: 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+}
+
+/* 4. Large Phones / Phablets (min-width: 481px) and (max-width: 576px) */
+@media screen and (min-width: 481px) and (max-width: 576px) {
+  .hero-title-giant { font-size: 4.5rem; }
+  .work-spotlight-card { grid-template-columns: 1fr; }
+  .work-spotlight-img-wrap { min-height: 280px; }
+  .work-spotlight-content { padding: 2.5rem; }
+  .work-archive-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: 1fr; }
+}
+
+/* 5. Small Tablets & Foldables (min-width: 577px) and (max-width: 768px) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .hero-title-giant { font-size: 5.5rem; }
+  .work-spotlight-card { grid-template-columns: 1fr; }
+  .work-spotlight-img-wrap { min-height: 320px; }
+  .work-spotlight-content { padding: 3rem; }
+  .work-archive-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: 1fr; }
+}
+
+/* 6. Standard Tablets & iPads (min-width: 769px) and (max-width: 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-title-giant { font-size: 6.8rem; }
+  .work-spotlight-card { grid-template-columns: 1.1fr 1fr; gap: 2.5rem; }
+  .work-spotlight-content { padding: 2rem 2rem 2rem 0; }
+  .work-archive-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* 7. Laptops & Small Desktops (min-width: 1025px) and (max-width: 1200px) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .hero-title-giant { font-size: 7.5rem; }
+  .work-archive-grid { grid-template-columns: repeat(4, 1fr); }
+  .testimonials-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* 8. Standard Desktops (min-width: 1201px) and (max-width: 1440px) */
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+  .hero-title-giant { font-size: 8.5rem; }
+}
+
+/* 9. Extra Large & 4K Displays (min-width: 1441px) */
+@media screen and (min-width: 1441px) {
+  .hero-title-giant { font-size: 9.5rem; }
+}

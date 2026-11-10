@@ -1,0 +1,113 @@
+/* ==========================================================================
+   STACKLY — HOMEPAGE RESPONSIVE MEDIA QUERIES (SEPARATELY WRITTEN 320PX TO 4K)
+   Handles: Hero, Personal Bio Bar, Home About Grid, Services, Process, Testimonial
+   ========================================================================== */
+
+/* 1. Ultra Small Mobile (max-width: 320px) */
+@media screen and (max-width: 320px) {
+  .hero { padding-top: 5.5rem; padding-bottom: 2rem; }
+  .hero-title-giant { font-size: 2.75rem; margin-bottom: 1rem; }
+  .home-bio-bar { flex-direction: column; align-items: flex-start; gap: 1.25rem; padding: 1.25rem 0; }
+  .home-bio-profile { flex-direction: column; align-items: flex-start; gap: 0.85rem; }
+  .home-bio-profile img { width: 56px; height: 56px; }
+  .home-bio-actions { width: 100%; flex-direction: column; }
+  .home-bio-actions .btn-flip { width: 100%; text-align: center; }
+  .hero-media-wrapper { margin-top: 2rem; border-radius: var(--radius-md); }
+  .hero-media-wrapper img { height: 220px; }
+  .marquee-section { padding: 1.75rem 0; }
+  .marquee-track { gap: 2rem; }
+  .home-section-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .home-stats-cluster { gap: 1.5rem; }
+  .home-stats-cluster > div { min-width: 45%; }
+  .services-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .service-card { padding: 1.75rem; min-height: auto; }
+  .process-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .process-card { padding: 1.75rem; }
+  .project-row-content { grid-template-columns: 1fr; gap: 0.5rem; }
+  .project-index, .project-year { display: none; }
+  .project-name { font-size: 1.4rem; }
+  .project-arrow { display: none; }
+  .cta-box { padding: 2.5rem 1.25rem; }
+  .cta-title { font-size: 1.85rem; }
+  .cta-desc { font-size: 0.95rem; }
+}
+
+/* 2. Small Mobile (min-width: 321px) and (max-width: 375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .hero { padding-top: 6rem; padding-bottom: 2.5rem; }
+  .hero-title-giant { font-size: 3.2rem; }
+  .home-bio-bar { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+  .home-bio-profile { gap: 1.25rem; }
+  .home-bio-profile img { width: 62px; height: 62px; }
+  .home-bio-actions { width: 100%; flex-direction: column; }
+  .home-bio-actions .btn-flip { width: 100%; text-align: center; }
+  .hero-media-wrapper img { height: 250px; }
+  .home-section-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+  .services-grid { grid-template-columns: 1fr; }
+  .process-grid { grid-template-columns: 1fr; }
+  .project-row-content { grid-template-columns: 35px 1fr auto; gap: 0.75rem; }
+  .project-year { display: none; }
+  .cta-box { padding: 3rem 1.5rem; }
+  .cta-title { font-size: 2.2rem; }
+}
+
+/* 3. Standard Mobile (min-width: 376px) and (max-width: 480px) */
+@media screen and (min-width: 376px) and (max-width: 480px) {
+  .hero { padding-top: 6.5rem; }
+  .hero-title-giant { font-size: 4rem; }
+  .home-bio-bar { flex-direction: column; align-items: flex-start; gap: 1.75rem; }
+  .home-bio-actions { width: 100%; }
+  .home-bio-actions .btn-flip { flex: 1; text-align: center; }
+  .hero-media-wrapper img { height: 300px; }
+  .home-section-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .services-grid { grid-template-columns: 1fr; }
+  .process-grid { grid-template-columns: 1fr; }
+  .project-row-content { grid-template-columns: 40px 1fr auto; gap: 1rem; }
+  .project-year { display: none; }
+  .cta-box { padding: 3.5rem 2rem; }
+}
+
+/* 4. Large Phones / Phablets (min-width: 481px) and (max-width: 576px) */
+@media screen and (min-width: 481px) and (max-width: 576px) {
+  .hero-title-giant { font-size: 4.8rem; }
+  .home-section-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .services-grid { grid-template-columns: 1fr; }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-media-wrapper img { height: 340px; }
+}
+
+/* 5. Small Tablets & Foldables (min-width: 577px) and (max-width: 768px) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .hero-title-giant { font-size: 6rem; }
+  .home-section-grid { grid-template-columns: 180px 1fr; gap: 2.5rem; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-media-wrapper img { height: 380px; }
+}
+
+/* 6. Standard Tablets & iPads (min-width: 769px) and (max-width: 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-title-giant { font-size: 7.5rem; }
+  .home-section-grid { grid-template-columns: 200px 1fr; gap: 3rem; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-media-wrapper img { height: 440px; }
+}
+
+/* 7. Laptops & Small Desktops (min-width: 1025px) and (max-width: 1200px) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .hero-title-giant { font-size: 9rem; }
+  .services-grid { grid-template-columns: repeat(3, 1fr); }
+  .process-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* 8. Standard Desktops (min-width: 1201px) and (max-width: 1440px) */
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+  .hero-title-giant { font-size: 11rem; }
+}
+
+/* 9. Extra Large & 4K Displays (min-width: 1441px) */
+@media screen and (min-width: 1441px) {
+  .hero-title-giant { font-size: 13rem; }
+  .hero-media-wrapper img { height: 600px; }
+}

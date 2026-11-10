@@ -1,0 +1,173 @@
+/* ==========================================================================
+   BREAKPOINT 3: STANDARD SMARTPHONE (min-width: 376px) and (max-width: 480px)
+   iPhone 13/14/15/16, Pixel 7/8, Samsung Galaxy S23/S24.
+   ========================================================================== */
+
+@media screen and (min-width: 376px) and (max-width: 480px) {
+  html, body {
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+    font-size: 14px !important;
+  }
+
+  .container, .container-wide {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  .header-nav {
+    display: none !important;
+  }
+
+  .header-logo-image,
+  .header-logo img {
+    height: 32px !important;
+  }
+
+  .header-logo-text {
+    font-size: 1.35rem !important;
+  }
+
+  .menu-drawer {
+    padding: 5.75rem 1.5rem 2rem !important;
+  }
+
+  .menu-drawer-item {
+    font-size: 2.2rem !important;
+  }
+
+  .hero {
+    padding-top: 6.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+
+  .hero-title-giant {
+    font-size: 3.1rem !important;
+    line-height: 1 !important;
+  }
+
+  .hero-bottom-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .rotating-badge-wrapper {
+    display: none !important;
+  }
+
+  .hero-media-wrapper img {
+    height: 280px !important;
+  }
+
+  .project-row-content {
+    grid-template-columns: 45px 1fr auto !important;
+    gap: 1rem !important;
+  }
+
+  .project-tags,
+  .project-year {
+    display: none !important;
+  }
+
+  .project-hover-ribbon {
+    display: none !important;
+  }
+
+  .award-row {
+    grid-template-columns: 1fr !important;
+    gap: 0.35rem !important;
+  }
+
+  .award-rank {
+    text-align: left !important;
+  }
+
+  /* Single Column Layouts */
+  .services-grid,
+  .process-grid,
+  .pricing-grid,
+  .matrix-grid,
+  .testimonials-grid,
+  .status-pill-grid,
+  .resources-grid,
+  .home-section-grid,
+  .work-spotlight-card,
+  .work-spotlight-metrics,
+  .about-profile-grid,
+  .blog-featured-card,
+  .blog-posts-grid,
+  .blog-guides-grid,
+  .contact-layout-grid,
+  .utility-destinations-grid,
+  .utility-highlights-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .work-archive-grid,
+  .about-gallery-grid,
+  .services-tools-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+
+  .blog-featured-content {
+    padding: 2rem !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+
+  .footer-right {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2rem !important;
+  }
+
+  .footer-newsletter-wrap {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .footer-newsletter-form {
+    flex-direction: column !important;
+    max-width: 100% !important;
+  }
+
+  .footer-newsletter-form .btn-flip {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* Menu Drawer Mobile/Tablet Adjustments */
+  .menu-drawer {
+    padding: 5.75rem 1.5rem 2rem !important;
+  }
+  .menu-drawer-top-status {
+    display: none !important;
+  }
+  .menu-drawer-content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    margin: 1.5rem 0 !important;
+  }
+  .menu-drawer-aside {
+    border-left: none !important;
+    padding-left: 0 !important;
+    border-top: 1px solid var(--border-light) !important;
+    padding-top: 1.5rem !important;
+    gap: 1.5rem !important;
+  }
+  .menu-drawer-item .item-tag {
+    display: none !important;
+  }
+  .accordion-header, .accordion-title, .accordion-icon {
+    color: #FFFFFF !important;
+  }
+  .accordion-header:hover .accordion-title, .accordion-item.active .accordion-title {
+    color: var(--accent-primary) !important;
+  }
+}

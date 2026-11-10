@@ -1,0 +1,90 @@
+/* ==========================================================================
+   STACKLY — BLOG RESPONSIVE MEDIA QUERIES (SEPARATELY WRITTEN 320PX TO 4K)
+   Handles: Blog Hero, Featured Article Card, Posts Grid, Deep Dives, Resources
+   ========================================================================== */
+
+/* 1. Ultra Small Mobile (max-width: 320px) */
+@media screen and (max-width: 320px) {
+  main { padding-top: 5.5rem !important; }
+  .hero-title-giant { font-size: 2.75rem; }
+  .blog-featured-card { grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 3rem; }
+  .blog-featured-img-wrap { height: 200px; }
+  .blog-featured-content { padding: 1.5rem; }
+  .blog-featured-content h2 { font-size: 1.35rem !important; }
+  .blog-posts-grid { grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 3rem; }
+  .blog-guides-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .resources-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .resource-item { padding: 1.5rem; }
+}
+
+/* 2. Small Mobile (min-width: 321px) and (max-width: 375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  main { padding-top: 6rem !important; }
+  .hero-title-giant { font-size: 3.2rem; }
+  .blog-featured-card { grid-template-columns: 1fr; gap: 1.75rem; margin-bottom: 3.5rem; }
+  .blog-featured-img-wrap { height: 230px; }
+  .blog-featured-content { padding: 1.75rem; }
+  .blog-featured-content h2 { font-size: 1.5rem !important; }
+  .blog-posts-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+  .blog-guides-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+  .resources-grid { grid-template-columns: 1fr; }
+}
+
+/* 3. Standard Mobile (min-width: 376px) and (max-width: 480px) */
+@media screen and (min-width: 376px) and (max-width: 480px) {
+  main { padding-top: 6.5rem !important; }
+  .hero-title-giant { font-size: 3.8rem; }
+  .blog-featured-card { grid-template-columns: 1fr; gap: 2rem; }
+  .blog-featured-img-wrap { height: 260px; }
+  .blog-featured-content { padding: 2rem; }
+  .blog-posts-grid { grid-template-columns: 1fr; }
+  .blog-guides-grid { grid-template-columns: 1fr; }
+  .resources-grid { grid-template-columns: 1fr; }
+}
+
+/* 4. Large Phones / Phablets (min-width: 481px) and (max-width: 576px) */
+@media screen and (min-width: 481px) and (max-width: 576px) {
+  .hero-title-giant { font-size: 4.5rem; }
+  .blog-featured-card { grid-template-columns: 1fr; }
+  .blog-featured-img-wrap { height: 290px; }
+  .blog-featured-content { padding: 2.5rem; }
+  .blog-posts-grid { grid-template-columns: 1fr; }
+  .blog-guides-grid { grid-template-columns: 1fr; }
+  .resources-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* 5. Small Tablets & Foldables (min-width: 577px) and (max-width: 768px) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .hero-title-giant { font-size: 5.5rem; }
+  .blog-featured-card { grid-template-columns: 1fr; }
+  .blog-featured-img-wrap { height: 320px; }
+  .blog-featured-content { padding: 3rem; }
+  .blog-posts-grid { grid-template-columns: repeat(2, 1fr); }
+  .blog-guides-grid { grid-template-columns: repeat(2, 1fr); }
+  .resources-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* 6. Standard Tablets & iPads (min-width: 769px) and (max-width: 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-title-giant { font-size: 6.8rem; }
+  .blog-featured-card { grid-template-columns: 1.1fr 1fr; gap: 2.5rem; }
+  .blog-featured-content { padding: 2rem 2rem 2rem 0; }
+  .blog-posts-grid { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .blog-guides-grid { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .resources-grid { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+}
+
+/* 7. Laptops & Small Desktops (min-width: 1025px) and (max-width: 1200px) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .hero-title-giant { font-size: 7.5rem; }
+}
+
+/* 8. Standard Desktops (min-width: 1201px) and (max-width: 1440px) */
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+  .hero-title-giant { font-size: 8.5rem; }
+}
+
+/* 9. Extra Large & 4K Displays (min-width: 1441px) */
+@media screen and (min-width: 1441px) {
+  .hero-title-giant { font-size: 9.5rem; }
+}
